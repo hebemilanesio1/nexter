@@ -1,0 +1,97 @@
+/* ./components/Services.css */
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f0f4ff;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.servicios h2 {
+    font-size: 2.5em; /* Aumenta el tamaño del título principal */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.titulo-destacado {
+    color: #6a0dad;
+}
+
+.servicios-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicio {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Aumenta el padding interno de las tarjetas */
+    text-align: center;
+    width: 270px;  /* Aumenta el ancho de las tarjetas */
+    margin: 20px 0; 
+    display: flex;           /* Usar flexbox para la disposición interna */
+    flex-direction: column;  /* Coloca los elementos en columna */
+    justify-content: space-between; /* Asegura que el contenido se distribuya verticalmente */
+    height: 500px;          /* Aumenta la altura de las tarjetas */
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.servicio img {
+    width: 70px; /* Aumenta el tamaño de la imagen */
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    font-size: 1.5em; /* Aumenta el tamaño del título dentro de cada tarjeta */
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    font-size: 1.2em; /* Aumenta el tamaño del texto de descripción */
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6; /* Incrementa el espacio entre líneas */
+}
+
+.btn-mas-info {
+    background-color: #ccff02; /* Cambiado a color #ccff02 */
+    border: none;              /* Elimina el borde */
+    border-radius: 5px;
+    color: #333;               /* Color del texto */
+    padding: 15px 25px;        /* Aumenta el padding del botón */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;          /* Aumenta el tamaño del texto en el botón */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;               /* Asegura que el botón ocupe todo el ancho del servicio */
+}
+
+.btn-mas-info:hover {
+    background-color: #6a0dad; /* Cambia el color al pasar el mouse */
+    color: #fff;               /* Cambia el color del texto al pasar el mouse */
+}
+
+.servicio img {
+    width: 70px; /* Ajusta el tamaño de la imagen */
+    height: 70px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen horizontalmente */
+}

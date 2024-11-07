@@ -1,0 +1,75 @@
+.about-content {
+    padding: 40px; /* Espaciado interno para la sección */
+    font-family: 'League Spartan'; /* Usar League Spartan */
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #333; /* Color del texto */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(20px); /* Desplazamiento inicial */
+    animation: fadeInUp 0.6s forwards; /* Llama a la animación */
+}
+
+/* Animación que desliza hacia arriba y hace aparecer el contenido */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Hacer visible el elemento */
+        transform: translateY(0); /* Volver a su posición original */
+    }
+}
+
+.about-image {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor, puedes cambiarlo según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-top: 20px; /* Espacio encima de la imagen para separación del texto */
+    opacity: 0; /* Comienza invisible */
+    transform: scale(0.8); /* Escala inicial */
+    animation: scaleIn 0.6s forwards; /* Llama a la animación */
+    animation-delay: 0.3s; /* Retraso para la imagen */
+}
+
+/* Animación de escalado para la imagen */
+@keyframes scaleIn {
+    to {
+        opacity: 1; /* Hacer visible la imagen */
+        transform: scale(1); /* Escalar a su tamaño original */
+    }
+}
+
+.about-text-container {
+    margin-bottom: 20px; /* Espacio debajo del contenedor de texto */
+}
+
+.about-title {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: 700; /* Peso del texto para el título */
+    font-style: italic; /* Hace que el texto esté en cursiva */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(10px); /* Desplazamiento inicial */
+    animation: titleSlideIn 0.6s forwards; /* Llama a la animación */
+}
+
+/* Animación que desliza el título hacia abajo */
+@keyframes titleSlideIn {
+    to {
+        opacity: 1; /* Hacer visible el título */
+        transform: translateY(0); /* Volver a su posición original */
+    }
+}
+
+.about-text {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    text-align: justify; /* Justifica el texto */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(10px); /* Desplazamiento inicial */
+    animation: textSlideIn 0.6s forwards; /* Llama a la animación */
+}
+
+/* Animación que desliza el texto hacia arriba */
+@keyframes textSlideIn {
+    to {
+        opacity: 1; /* Hacer visible el texto */
+        transform: translateY(0); /* Volver a su posición original */
+    }
+}

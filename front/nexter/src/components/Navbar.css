@@ -1,0 +1,48 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #611ee9;
+    color: #fff;
+    font-family: 'League Spartan', sans-serif; /* Aplica la fuente a todo el navbar */
+}
+
+.navbar-logo a {
+    font-size: 2rem; /* Aumenta el tamaño del texto del logo */
+    font-weight: bold;
+    color: #ccff02;
+    text-decoration: none;
+    text-transform: uppercase; /* Cambia el texto a mayúsculas */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Aumenta el espacio entre los elementos del menú */
+}
+
+.navbar-links li {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto en los enlaces */
+    font-weight: bold; /* Peso normal de la fuente para el texto del navbar */
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'League Spartan', sans-serif; /* Aplica la fuente a los enlaces */
+    text-transform: uppercase; /* Cambia el texto a mayúsculas */
+}
+
+.navbar-links a:hover {
+    color: #ccff02;
+}
+
+.navbar-logo img {
+    height: 75px; /* Cambia el valor para hacerlo aún más pequeño si es necesario */
+    width: auto;
+}
